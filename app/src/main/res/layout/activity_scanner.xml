@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="#DED0F3"
+    android:background="@drawable/backgroundmain"
+    android:layout_height="match_parent"
+    tools:context=".scannerC">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A9E6E6E8"
+            android:orientation="horizontal"
+            android:padding="7dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColor="#4C4949"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="https://www.google.com.tr" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <Button
+            android:id="@+id/run"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:visibility="visible"
+            android:background="@drawable/buttonsettings"
+            android:drawableRight="@drawable/ic_baseline_eco_24"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="  "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:background="@drawable/buttonsettings"
+            android:drawableRight="@drawable/ic_baseline_replay_24"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Scan Again  "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
